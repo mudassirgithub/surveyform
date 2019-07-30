@@ -1,6 +1,6 @@
 # Title
 
-### Suvrey Form for CoderHive EduTech LLP.
+### Suvrey Form
 
 # Description
 
