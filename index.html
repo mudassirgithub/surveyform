@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link href="./survey.css" rel="stylesheet">
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<div id="form-outer">
+		<p id="description">Let us know how to improve</p>
+		<form id="survey-form" method="GET">
+			<div>
+				<div class="labels"><label id="name-label" for="name">*Name:</label></div>
+				<div class="rightTab"><input autofocus id="name" type=text placeholder="Enter your name" required class="input-field"></div>
+			</div>
+			<div>
+				<div class="labels"><label id="email-label" for="email">*Email:</label></div>
+				<div class="rightTab"><input id="email" type=text placeholder="Enter your Email" required class="input-field"></div>
+			</div>
+			<div>
+				<div class="labels"><label id="number-label" for="number">*Age:</label></div>
+				<div class="rightTab"><input id="age" type=number min="7" max="125" placeholder="Age" class="input-field"></div>
+			</div>
+			<div>
+				<div class="labels"><label for="dropdown">Which option best describes your current role?</label></div>
+				<div class="rightTab">
+					<select id="dropdown" class="dropdown rig">
+						<option disabled value>Select an option</option>
+						<option>Student</option>
+						<option>Full Time Job</option>
+						<option>Full Time Learner</option>
+						<option>Prefer Not Say</option>
+						<option>Other</option>
+					</select>
+				</div>
+			</div>
+			<div>
+				<div class="labels"><label for="radio-list">* How do you came to know about CoderHive</label></div>
+				<div class="rightTab">
+					<ul id="radio-list" style="list-style: none;">
+						<li class="radio"><input type="radio" name="buffer" class="userRatings">Friend</li>
+						<li class="radio"><input type="radio" name="buffer" class="userRatings">Internet</li>
+						<li class="radio"><input type="radio" name="buffer" class="userRatings">other</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<div class="labels"><label for="mostLike">What do you most like at CoderHive</label></div>
+				<div class="rightTab">
+					<select id="mostLike" class="dropdown">
+						<option disabled value>Select an option</option>
+						<option>Environment</option>
+						<option>Mentors</option>
+						<option>Curriculum</option>
+						<option>Teaching Method</option>
+						<option>Community</option>
+					</select>
+				</div>
+			</div>
+			<div>
+				<div class="labels"><label for="checklist">What do you want to learn at CoderHive</label></div>
+				<div class="rightTab">
+					<ul id="checklist" style="list-style: none;">
+						<li class="checkbox"><input type="checkbox" value="c language">c language</li>
+						<li class="checkbox"><input type="checkbox" value="python">python</li>
+						<li class="checkbox"><input type="checkbox" value="java">java</li>
+						<li class="checkbox"><input type="checkbox" value="javaScript">javaScript</li>
+						<li class="checkbox"><input type="checkbox" value="Html">Html</li>
+						<li class="checkbox"><input type="checkbox" value="css">css</li>
+						<li class="checkbox"><input type="checkbox" value="other">other</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+
+				<div class="labels"><label for="commentArea">Any comments or suggestions:</label></div>
+				<div class="rightTab">
+					<textarea id="commentArea" class="input-field" placeholder="Enter your comments here"></textarea>
+				</div>
+
+
+			</div>
+			<div>
+				<button id="submit" type="Submit">Submit</button>
+			</div>
+		</form>
+	</div>
+
+
+</body>
+</html>
